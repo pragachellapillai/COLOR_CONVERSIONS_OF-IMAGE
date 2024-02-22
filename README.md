@@ -168,13 +168,49 @@ OUTPUT:
 
 ### ix) Split and merge RGB Image
 ```
+import cv2
+img = cv2.imread('pvr.jpg',1)
+img = cv2.resize(img,(300,200))
 
+R = img[:,:,2]
+G = img[:,:,1]
+B = img[:,:,0]
+
+cv2.imshow('R-Channel',R)
+cv2.imshow('G-Channel',G)
+cv2.imshow('B-Channel',B)
+
+merged = cv2.merge((B,G,R))
+cv2.imshow('Merged RGB image',merged)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
+OUTPUT:
+
+![Screenshot (26)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/d89c99f9-3d0d-41cc-a342-7c5532a9633e)
+
 
 ### x) Split and merge HSV Image
-<br>
-<br>
+```
+import cv2
+img = cv2.imread("duck.jpeg",1)
+img = cv2.resize(img,(300,200))
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
+H,S,V=cv2.split(img)
+
+cv2.imshow('Hue',H)
+cv2.imshow('Saturation',S)
+cv2.imshow('Value',V)
+
+merged = cv2.merge((H,S,V))
+cv2.imshow('Merged',merged)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+OUTPUT:
 
 
 
