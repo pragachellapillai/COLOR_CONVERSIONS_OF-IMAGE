@@ -137,15 +137,10 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
-OUTPUT:
-![Screenshot (24)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/0d67d3bf-ac01-470c-8aa5-568d522fb51f)
+```OUTPUT:![Screenshot (24) - Copy](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/1f14636d-07b0-444b-8964-c85d6a29424c)
 
 
 
-### vii) HSV to RGB and BGR
-<br>
-<br>
 
 ### viii) RGB and BGR to YCrCb
 <br>
