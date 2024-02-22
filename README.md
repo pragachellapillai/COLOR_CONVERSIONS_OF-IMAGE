@@ -54,7 +54,9 @@ cv2.destroyAllWindows()
 print(img.shape)
 ```
 OUTPUT:
-![Screenshot (17)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/fcfd98d7-c548-4d7b-8eea-29e5be2dcbbe)
+![Screenshot (21)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/220ba7ec-1e2a-48d1-bc02-0741b9228653)
+
+
 
 
 ### ii)Write the image
@@ -95,16 +97,49 @@ cv2.destroyAllWindows()
 
 ```
 OUTPUT:
-
+![Screenshot (21)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/66e12b7c-876c-4c71-9854-5e5fc199b19a)
 
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+```
+import cv2
+img2 = cv2.imread("pvr.jpg")
+x = 0
+y = 200
+x1 = 160
+y1 = 450
+x2 = 0
+y2 = 0
+cropimg = img2[x:x1+x2, y:y1+y2]
+cv2.imshow("Original Image", img2)
+cv2.imshow("Cropped Image", cropimg)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+OUTPUT:
+![Screenshot (22)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/641bd483-5b23-41cf-b483-35f7a4426763)
+
 
 ### vi) BGR and RGB to HSV and GRAY
-<br>
-<br>
+'''
+import cv2
+img = cv2.imread('pvr.jpg',1)
+img = cv2.resize(img,(300,200))
+cv2.imshow('Original Image',img)
+hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow('BGR2HSV',hsv1)
+hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+cv2.imshow('RGB2HSV',hsv2)
+gray1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imshow('BGR2GRAY',gray1)
+gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+cv2.imshow('RGB2GRAY',gray2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+'''
+OUTPUT:
+![Screenshot (24)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/02cb5556-44a2-4c77-8653-40590af9f8a4)
+
 
 ### vii) HSV to RGB and BGR
 <br>
