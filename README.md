@@ -54,7 +54,8 @@ cv2.destroyAllWindows()
 print(img.shape)
 ```
 OUTPUT:
-![Screenshot (21)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/220ba7ec-1e2a-48d1-bc02-0741b9228653)
+![Screenshot (16)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/62f4d869-3c75-4116-9e36-4800c05829f7)
+
 
 
 
@@ -138,7 +139,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 OUTPUT:
-![Screenshot (24)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/02cb5556-44a2-4c77-8653-40590af9f8a4)
+![Screenshot (24)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/0d67d3bf-ac01-470c-8aa5-568d522fb51f)
+
 
 
 ### vii) HSV to RGB and BGR
