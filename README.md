@@ -122,7 +122,7 @@ OUTPUT:
 
 
 ### vi) BGR and RGB to HSV and GRAY
-'''
+```
 import cv2
 img = cv2.imread('pvr.jpg',1)
 img = cv2.resize(img,(300,200))
@@ -137,7 +137,8 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```OUTPUT:![Screenshot (24) - Copy](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/1f14636d-07b0-444b-8964-c85d6a29424c)
+```
+OUTPUT:![Screenshot (24) - Copy](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/1f14636d-07b0-444b-8964-c85d6a29424c)
 
 
 
