@@ -36,30 +36,67 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:
-### Register Number: 
+### Developed By:pragaharshitha N.C
+### Register Number: 212222110033
 
 
 ## Output:
 
 ### i) Read and display the image
+```
+import cv2
+import matplotlib.pyplot as plt
 
-<br>
-<br>
+img=cv2.imread("pvr.jpg",1)
+cv2.imshow("display window",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(img.shape)
+```
+OUTPUT:
+![Screenshot (17)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/fcfd98d7-c548-4d7b-8eea-29e5be2dcbbe)
+
 
 ### ii)Write the image
+```
+img1=cv2.imread("pvr.jpg",0)
+cv2.imshow("display window",img1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+cv2.imwrite('greyscale.jpeg',img1)
+```
 
-<br>
-<br>
+OUTPUT:
+![Screenshot (18)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/a308cc14-16b0-426b-9ae2-11223f6bf4c9)
+
 
 ### iii)Shape of the Image
+```
+import cv2
+img1=cv2.imread("pvr.jpg",1)
+print(img1.shape)
+```
+OUTPUT:
+![Screenshot (19)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/8850a738-5da7-4a67-928c-73af03fab41d)
 
-<br>
-<br>
 
 ### iv)Access rows and columns
-<br>
-<br>
+```
+import random
+import cv2
+image=cv2.imread('pvr.jpg',1)
+image=cv2.resize(image,(400,400))
+for i in range (150,200):
+    for j in range(image.shape[1]):
+        image[i][j]=[random.randint(0,255), random.randint(0,255), random.randint(0,255)] 
+cv2.imshow('part image',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+```
+OUTPUT:
+
+
 
 ### v)Cut and paste portion of image
 <br>
