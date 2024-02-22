@@ -136,7 +136,7 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-'''
+```
 OUTPUT:
 ![Screenshot (24)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/02cb5556-44a2-4c77-8653-40590af9f8a4)
 
