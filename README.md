@@ -144,12 +144,32 @@ OUTPUT:![Screenshot (24) - Copy](https://github.com/pragachellapillai/COLOR_CONV
 
 
 ### viii) RGB and BGR to YCrCb
-<br>
-<br>
+```
+import cv2
+img = cv2.imread('pvr.jpg')
+img = cv2.resize(img,(300,200))
+
+img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow('Original HSV Image',img)
+
+RGB = cv2.cvtColor(img,cv2.COLOR_HSV2RGB)
+cv2.imshow('2HSV2BGR',RGB)
+
+BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
+cv2.imshow('HSV2RGB',BGR)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+OUTPUT:
+
+![Screenshot (25)](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/88366e30-c1e3-4e60-a98f-8bf13894ff7d)
+
 
 ### ix) Split and merge RGB Image
-<br>
-<br>
+```
+
+```
 
 ### x) Split and merge HSV Image
 <br>
