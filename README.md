@@ -211,6 +211,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 OUTPUT:
+![Screenshot 2024-02-22 184048](https://github.com/pragachellapillai/COLOR_CONVERSIONS_OF-IMAGE/assets/148254952/5b84ebbb-bf37-4316-a2e8-55d25e2ff2d9)
 
 
 
